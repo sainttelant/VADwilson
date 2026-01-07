@@ -742,7 +742,7 @@ if __name__ == '__main__':
     countofvisualization = 0
     imgs = []
     fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-    video_path = osp.join(out_path, 'vis.mp4')
+    video_path = osp.join(out_path, 'vis_prune.mp4')
     video = cv2.VideoWriter(video_path, fourcc, 10, (2933, 800), True)
     for id in tqdm(range(len(sample_token_list))):
         mmcv.mkdir_or_exist(out_path)
