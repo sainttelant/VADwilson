@@ -31,3 +31,5 @@ CUDA_VISIBLE_DEVICES=0,1,2 python tools/analysis_tools/analysis_struct.py projec
 
 # try to infer it with pruned model
 CUDA_VISIBLE_DEVICES=0 python tools/test.py projects/configs/VAD/VAD_tiny_stage_2.py ckpts/vad_structured_pruned.pth --launcher none --eval bbox --tmpdir tmp
+
+# 开始转化剪枝后重新训练的模型到onnx
